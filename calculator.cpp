@@ -22,14 +22,39 @@ int main() {
     std::cin >> number1;
     std::cout << "\n";
 
+    if (number1 > 1000) {
+        
+        do {
+
+            std::cout << "That number is too big... Try again: ";
+            number1 = 0;
+            std::cin >> number1; std::cout << "\n";
+
+        } while (number1 > 1000);
+        
+    }
+
     std::cout << "Please enter your second number: ";
     std::cin >> number2;
     std::cout << "\n";
+
+    if (number2 > 1000) {
+        
+        do {
+
+            std::cout << "That number is too big... Try again: ";
+            number1 = 0;
+            std::cin >> number2; std::cout << "\n";
+
+        } while (number2 > 1000);
+        
+    }
 
     std::cout << "1: Addition           2: Subtraction\n";
     std::cout << "3: Multiplication     4: Division\n";
     std::cout << "Please choose your action: ";
     std::cin >> action;
+    std::cout << "\n";
 
 
 
